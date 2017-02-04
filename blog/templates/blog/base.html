@@ -8,12 +8,18 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
+      <img class="lensflare" src="http://www.freeiconspng.com/uploads/lens-flare-transparent-background-png-transparent-lens-flare-png-24.png" style="
+          position: absolute;
+          left: 20px;
+          top: 35px;
+      ">
       <div class="page-header">
         {% if user.is_authenticated %}
           <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         {% endif %}
           <h1><div class="fire"></div><a href="/">Django Girls Blog</a><div class="fire"></div></h1>
       </div>
+      <marquee><img class="mario" src="http://rs270.pbsrc.com/albums/jj118/nick5214/mario.gif~c200">A Django Girls blog brought to you by table 11's coach.</marquee>
       <div class="content container">
           <div class="row">
               <div class="col-md-8">
